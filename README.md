@@ -2,7 +2,7 @@
 
 Based on [this course](https://www.youtube.com/playlist?list=PLhSj3UTs2_yX_ct0OfHrmMwKL8wpz-N2j) by Falcon Masters
 
-Before to continue, you'll need to have nodejs and npm installed. 
+**Important! Before to continue, you'll need to have nodejs and npm installed.**
 
 ## Initial file structure
 
