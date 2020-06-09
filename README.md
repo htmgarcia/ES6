@@ -112,7 +112,7 @@ In console we run:
 
 `> npm run build`
 
-The command above executes "babel src -d output", which means the file constLet.js code was converted to support all the browsers, and this copy stored in output/ folder.
+The command above executes "babel src -d output", which means the file constLet.js was copy-pasted inside output/ folder.
 
 ## Make ES6 code compatible with all browsers
 
@@ -123,6 +123,8 @@ Create a file named .babelrc with the content below:
   "presets": ["@babel/preset-env"]
 }
 ```
+
+If you run the command again, it will do the same process from previous step, however this time will change the code from the constLet.js file stored in output/ folder to make it compatible with all the browsers.
 
 ## Automatically execute a command
 
