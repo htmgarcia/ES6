@@ -93,8 +93,8 @@ Let's create the "build" command inside the "scripts" object. This code is added
 }
 ```
 
-src = folder where the files with EC6 standard are stored
-output = folder where files converted in plain javascript code for all browsers are stored 
+- src = folder where the files with EC6 standard are stored
+- output = folder where files converted in plain javascript code for all browsers are stored 
 
 So far, package.json looks like:
 
