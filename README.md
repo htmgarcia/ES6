@@ -69,7 +69,7 @@ Run this command to install the npm dependencies. We install 3 babel [as suggest
 
 `> npm install --save-dev @babel/core @babel/cli @babel/preset-env`
 
-At this point, package.json was modified on the fly to include the dependencies.
+At this point, package.json was modified on the fly to include the babel dependencies.
 
 ```
 {
