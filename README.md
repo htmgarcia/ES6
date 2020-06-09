@@ -116,8 +116,6 @@ The command above executes "babel src -d output"
 
 ## Make ES6 code compatible with all browsers
 
-*This is only when you're using babel.*
-
 Create a file named .babelrc with the content below:
 
 ```
