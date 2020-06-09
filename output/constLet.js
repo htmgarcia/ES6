@@ -1,4 +1,4 @@
 "use strict";
 
-var nombre = 'John Doe';
-console.log('Hello ' + nombre + '!');
+var name = 'John Doe';
+console.log('Hello ' + name + '!');

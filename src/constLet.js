@@ -1,3 +1,3 @@
-let nombre = 'John Doe';
+let name = 'John Doe';
 
-console.log('Hello ' + nombre + '!');
+console.log('Hello ' + name + '!');
