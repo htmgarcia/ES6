@@ -65,10 +65,11 @@ In terminal go to the folder where package.json is stored:
 
 `> cd path/to/folder/`
 
-Run this command to install the npm dependencies (in this example  we install 3 babel plugins - https://babeljs.io/docs/en/usage):
+Run this command to install the npm dependencies. We install 3 babel [as suggested here](https://babeljs.io/docs/en/usage):
+
 `> npm install --save-dev @babel/core @babel/cli @babel/preset-env`
 
-At this point, package.json should include the dependencies automatically. In this example: 3 dependencies from babel.
+At this point, package.json was modified on the fly to include the dependencies.
 
 ```
 {
@@ -80,7 +81,7 @@ At this point, package.json should include the dependencies automatically. In th
 }
 ```
 
-You'll notice a new folder named node_modules was created. Don't touch this content!
+You'll notice a new folder named node_modules was created. **Don't touch this content!**
 
 ## Create a command to run the devDependencies
 
