@@ -55,7 +55,7 @@ A simple HTML5 file with the code below:
 
 The file where node module dependencies and commands are defined.
 
-## Edit package.json file and install node_modules dependencies
+## Edit package.json file and install Babeljs
 
 Edit package.json. Include only this content: 
 
