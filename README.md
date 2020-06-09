@@ -23,14 +23,14 @@ Here the javascript files using ES6 standard are stored.
 A simple file to place ES6 code. In this example, we use the code below:
 
 ```
-let nombre = 'John Doe';
+let name = 'John Doe';
 
-console.log('Hello ' + nombre + '!');
+console.log('Hello ' + name + '!');
 ```
 
 ### output/ folder
 
-Here the javascript files compatible with all the browsers are stored. In this example, the files inside src/ folder are converted and stored here.
+Here the javascript files compatible with all the browsers are stored. In this example, the files inside src/ folder are converted with babeljs and stored here.
 
 ### index.html
  
