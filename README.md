@@ -19,29 +19,34 @@ Run this command to install the npm dependencies (in this example  we install 3 
 
 At this point, package.json should include the dependencies automatically. In this example: 3 dependencies from babel.
 
-`{
+```
+{
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2"
   }
-}`
+}
+```
  
 
 ## Create a command to run the devDependencies
 
 In this example we create the "build" command inside the "scripts" object. This code is added manually:
 
-`"scripts": {
+```
+"scripts": {
   "build": "babel src -d output"
-}`
+}
+```
 
 src = folder where the files with EC6 standard are stored
 output = folder where files converted in vain code for all browsers are stored 
 
 So far, package.json looks like:
 
-`{
+```
+{
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
@@ -50,7 +55,8 @@ So far, package.json looks like:
   "scripts": {
     "build": "babel src -d output"
   }
-}`
+}
+```
 
 In console we run:
 
@@ -64,9 +70,11 @@ The command above executes "babel src -d output"
 
 Create a file named .babelrc with the content below:
 
-`{
+```
+{
   "presets": ["@babel/preset-env"]
-}`
+}
+```
 
 ## Automatically execute a command
 
