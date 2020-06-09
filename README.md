@@ -4,9 +4,60 @@ Based on [this course](https://www.youtube.com/playlist?list=PLhSj3UTs2_yX_ct0Of
 
 Before to continue, you'll need to have nodejs and npm installed. 
 
-## Create a package.json file and install node_modules dependencies
+## Initial file structure
 
-Include only this content: 
+Set this initial structure:
+
+- src/
+- src/constLet.js
+- output/
+- index.html
+- package.json
+
+### src/ folder
+
+Here the javascript files using ES6 standard are stored.
+
+### src/constLet.js file
+
+A simple file to place ES6 code. In this example, we use the code below:
+
+```
+let nombre = 'John Doe';
+
+console.log('Hello ' + nombre + '!');
+```
+
+### output/ folder
+
+Here the javascript files compatible with all the browsers are stored. In this example, are the files inside src/ folder.
+
+### index.html
+ 
+A simple HTML5 file with the code below:
+
+```
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ES6</title>
+</head>
+<body>
+<h1>Learning ES6</h1>
+
+<script src="src/constLet.js"></script>
+</body>
+</html>
+```
+
+### package.json file
+
+The file where node module dependencies and commands are defined.
+
+## Edit package.json file and install node_modules dependencies
+
+Edit package.json. Include only this content: 
 
 `{}`
 
@@ -28,11 +79,12 @@ At this point, package.json should include the dependencies automatically. In th
   }
 }
 ```
- 
+
+You'll notice a new folder named node_modules was created. Don't touch this content!
 
 ## Create a command to run the devDependencies
 
-In this example we create the "build" command inside the "scripts" object. This code is added manually:
+Let's create the "build" command inside the "scripts" object. This code is added manually:
 
 ```
 "scripts": {
@@ -41,7 +93,7 @@ In this example we create the "build" command inside the "scripts" object. This 
 ```
 
 src = folder where the files with EC6 standard are stored
-output = folder where files converted in vain code for all browsers are stored 
+output = folder where files converted in plain javascript code for all browsers are stored 
 
 So far, package.json looks like:
 
@@ -64,7 +116,7 @@ In console we run:
 
 The command above executes "babel src -d output"
 
-## Make ES6 code compatible with all browsers =====
+## Make ES6 code compatible with all browsers
 
 *This is only when you're using babel.*
 
