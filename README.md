@@ -30,7 +30,7 @@ console.log('Hello ' + nombre + '!');
 
 ### output/ folder
 
-Here the javascript files compatible with all the browsers are stored. In this example, are the files inside src/ folder.
+Here the javascript files compatible with all the browsers are stored. In this example, the files inside src/ folder are converted and stored here.
 
 ### index.html
  
