@@ -207,7 +207,7 @@ Similar to PHP:
 - **let** are variables. You can modify its value always.
 - **const** are constants. Its value is the same always. Cannot change. 
 
-Take in mind the ["living inside a block"](#redeclare-variables-from-different-blocks) approach if you need to use the same variables or constants. 
+Take in mind the ["living inside a block"](#redeclare-variables-from-different-blocks) approach if you need to use again the same variables or constants. 
 
 ### Const exception
 
