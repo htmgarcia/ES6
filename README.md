@@ -4,7 +4,7 @@ Based on [this course](https://www.youtube.com/playlist?list=PLhSj3UTs2_yX_ct0Of
 
 **Important! Before to continue, you'll need to have nodejs and npm installed.**
 
-## Initial file structure
+## 1. Initial file structure
 
 Set this initial structure:
 
@@ -55,7 +55,7 @@ A simple HTML5 file with the code below:
 
 The file where node module dependencies and commands are defined.
 
-## Edit package.json file and install Babeljs
+## 2. Edit package.json file and install Babeljs
 
 Edit package.json. Include only this content: 
 
@@ -83,7 +83,7 @@ At this point, package.json was modified on the fly to include the babel depende
 
 You'll notice a new folder named node_modules was created. **Don't touch this content!**
 
-## Create a command to run the devDependencies
+## 3. Create a command to run the devDependencies
 
 Let's create the "build" command inside the "scripts" object. This code is added manually:
 
@@ -114,7 +114,7 @@ In console we run:
 
 The command above executes "babel src -d output", which means the file constLet.js was copy-pasted inside output/ folder.
 
-## Make ES6 code compatible with all browsers
+## 4. Make ES6 code compatible with all browsers
 
 Create a file named .babelrc with the content below:
 
@@ -126,7 +126,7 @@ Create a file named .babelrc with the content below:
 
 If you run the command again, it will do the same process from previous step, however this time will change the code from the constLet.js file stored in output/ folder to make it compatible with all the browsers.
 
-## Automatically execute a command
+## 5. Automatically execute a command
 
 Add `--watch` to `"build"`:
 
@@ -138,9 +138,9 @@ Then run again (just once):
 
 From now on, every time you save changes on your javascript ES6 file, the command will run automatically.
 
-# Let and const
+## 6. Let and const
 
-## The scope
+### The scope
 
 The scope for **let** and **const** is type block, which is different to regular **var**. These type of variables are not reachable outside `{}`. In the example below `isAdult` is not reachable by `console.log()` because is inside a conditional.
 
@@ -165,7 +165,7 @@ if(age >= 18) {
 }
 ```
 
-## Redeclare variables in the same block
+### Redeclare variables in the same block
 
 You can't redeclare variables if are living in the same block. As example:
 
@@ -182,7 +182,7 @@ name = 'John Doe';
 ```
 
 
-## Redeclare variables from different blocks
+### Redeclare variables from different blocks
 
 You CAN redeclare variables if are not living in the same block. As example:
 
@@ -200,14 +200,14 @@ console.log(isAdult);
 
 In the code above, the first declaration of `isAdult` lives inside the conditional. This is what means "living inside a block". The second declaration is outside that block.
 
-# When to use let and const?
+### When to use let and const?
 
 Similar to PHP:
 
 - **let** are variables. You can modify its value always.
 - **const** are constants. Its value is the same always. Cannot change. Just take in mind the ["living inside a block"](#redeclare-variables-from-different-blocks) approach if you need to "redeclare". 
 
-## Const exception
+### Const exception
 
 When the const is an array, you can push new values. As example:
 
