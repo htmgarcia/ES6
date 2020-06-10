@@ -137,3 +137,83 @@ Then run again (just once):
 `> npm run build`
 
 From now on, every time you save changes on your javascript ES6 file, the command will run automatically.
+
+# Let and const
+
+## The scope
+
+The scope for **let** and **const** is type block, which is different to regular **var**. These type of variables are not reachable outside `{}`. In the example below `isAdult` is not reachable by `console.log()` because is inside a conditional.
+
+```
+let age = 18;
+
+if(age >= 18) {
+    let isAdult = true;
+}
+
+console.log(isAdult);
+```
+
+To fix the example above, we put the last line inside the conditional:
+
+```
+let age = 18;
+
+if(age >= 18) {
+    let isAdult = true;
+    console.log(isAdult);
+}
+```
+
+## Redeclare variables in the same block
+
+You can't redeclare variables if are living in the same block. As example:
+
+```
+let name = 'Juan Perez';
+let name = 'John Doe';
+```
+
+**About let variables only.** You can override its value if you don't include `let` in the syntax when overriding:
+
+```
+let name = 'Juan Perez';
+name = 'John Doe';
+```
+
+
+## Redeclare variables from different blocks
+
+You CAN redeclare variables if are not living in the same block. As example:
+
+```
+let age = 18;
+
+if(age >= 18) {
+    const isAdult = true;
+    console.log(isAdult);
+}
+
+const isAdult = 'Obviously';
+console.log(isAdult);
+```
+
+In the code above, the first declaration of `isAdult` lives inside the conditional. This is what means "living in a block". The second declaration is outside that block.
+
+# When to use Let and const?
+
+Similar to PHP:
+
+- **let** are variables. You can modify its value always.
+- **const** are constants. Its value is the same always. Cannot change.
+
+## Const exception
+
+When the const is an array, you can push new values. As example:
+
+```
+const colors = ['blue', 'red'];
+colors.push('purple');
+
+console.log(colors);
+```
