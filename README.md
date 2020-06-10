@@ -200,7 +200,7 @@ console.log(isAdult);
 
 In the code above, the first declaration of `isAdult` lives inside the conditional. This is what means "living inside a block". The second declaration is outside that block.
 
-# When to use Let and const?
+# When to use let and const?
 
 Similar to PHP:
 
