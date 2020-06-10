@@ -143,7 +143,7 @@ From now on, every time you save changes on your javascript ES6 file, the comman
 
 ### The scope
 
-The scope for **let** and **const** is type block, which is different to regular **var**. These type of variables are not reachable outside `{}`. In the example below `isAdult` is not reachable by `console.log()` because is inside a conditional.
+The scope for **let** and **const** is type block, which is different to regular **var**. These type of variables are not reachable outside `{}`. In the example below `isAdult` is not reachable by `console.log()` and generate ann error because is inside a conditional.
 
 ```
 let age = 18;
