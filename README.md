@@ -174,7 +174,7 @@ let name = 'Juan Perez';
 let name = 'John Doe';
 ```
 
-**About let variables only.** You can override its value if you don't include `let` in the syntax when overriding:
+**About let variables only.** You can override its value if you don't include `let` in the syntax:
 
 ```
 let name = 'Juan Perez';
@@ -198,7 +198,7 @@ const isAdult = 'Obviously';
 console.log(isAdult);
 ```
 
-In the code above, the first declaration of `isAdult` lives inside the conditional. This is what means "living in a block". The second declaration is outside that block.
+In the code above, the first declaration of `isAdult` lives inside the conditional. This is what means "living inside a block". The second declaration is outside that block.
 
 # When to use Let and const?
 
