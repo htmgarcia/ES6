@@ -31,6 +31,7 @@ console.log('Hello ' + name + '!');
 ### output/ folder
 
 Here the javascript files compatible with all the browsers are stored. In this example, the files inside src/ folder are converted with babeljs and stored here.
+This is possible thanks to [this command](#3-create-a-command-to-run-the-devdependencies).
 
 ### index.html
  
@@ -65,7 +66,7 @@ In terminal go to the folder where package.json is stored:
 
 `> cd path/to/folder/`
 
-Run this command to install the npm dependencies. We install 3 babel [as suggested here](https://babeljs.io/docs/en/usage):
+Run this command to install the npm dependencies. We install 3 babel dependencies [as suggested here](https://babeljs.io/docs/en/usage):
 
 `> npm install --save-dev @babel/core @babel/cli @babel/preset-env`
 
