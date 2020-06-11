@@ -220,3 +220,43 @@ colors.push('purple');
 
 console.log(colors);
 ```
+
+## 7. Template Strings
+
+Wrap strings that contains variables with **`**. As example:
+
+```
+const name      = 'John Doe';
+const age       = 33;
+const country   = 'Mexico';
+
+console.log(`His name is ${name}, is ${age} years old and is from ${country}`);
+```
+
+## 8. Arrow functions
+
+Arrow functions follows the structure below:
+
+```
+(parameter) => {
+    return `something`;
+}
+```
+
+In a use case, using arrays and the `map()` method to have access to all the array values. One by one, similar to the `foreach()` method in PHP. As example:
+
+```
+const names = ['Miguel', 'Alberto', 'Oscar', 'Juan'];
+
+const number_of_characters = names.map((name) => {
+    return `${name} has ${name.length} number of characters`;
+});
+
+console.log(number_of_characters);
+```
+
+The arrow function from the example above can be optimized due only uses a single parameter, `name` in this case. 
+
+```
+const number_of_characters = names.map(name => `${name} has ${name.length} number of characters`);
+```
