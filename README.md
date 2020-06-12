@@ -260,3 +260,15 @@ The arrow function from the example above can be optimized due only uses a singl
 ```
 const number_of_characters = names.map(name => `${name} has ${name.length} number of characters`);
 ```
+
+## 9. Default parameters
+
+Define a default value for a parameter to make it optional. Use `undefined` when calling the method.
+
+```
+function registerUser(name, country = 'No specified', email, telephone = 'No specified') {
+    return `Name: ${name}, Country: ${country}, Email: ${email}, Telephone: ${telephone}`;
+}
+
+console.log(registerUser('John Doe', undefined, 'mail@nomail.com', undefined));
+```
