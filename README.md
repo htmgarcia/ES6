@@ -272,3 +272,35 @@ function registerUser(name, country = 'No specified', email, telephone = 'No spe
 
 console.log(registerUser('John Doe', undefined, 'mail@nomail.com', undefined));
 ```
+
+## 10. Destructure arrays
+
+Transform array values into variables.
+
+```
+const person = ['John Doe', 33, 'Mexico'];
+
+const [name, , country, email = 'No specified'] = person;
+
+console.log(country);
+```
+
+In the example above we skip age (33) by leaving just a coma.
+
+Now, using destructure arrays inside an arrow function is also possible.
+
+```
+const person = ['John Doe', 33, 'Mexico'];
+
+const showInfo = ([name, , country, carrer = 'No specified'] = person) => {
+    console.log(name, country, carrer);
+}
+
+showInfo();
+```
+
+The arrow function from the example above can be optimized. 
+
+```
+const showInfo = ([name, , country, carrer = 'No specified'] = person) => console.log(name, country, carrer);
+```
