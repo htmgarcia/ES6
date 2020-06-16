@@ -304,3 +304,41 @@ The arrow function from the example above can be optimized.
 ```
 const showInfo = ([name, , country, carrer = 'No specified'] = person) => console.log(name, country, carrer);
 ```
+
+## 11. Destructure objects
+
+Transform object values into variables.
+
+```
+const person = {
+	name: 'John Doe', 
+	age: 33, 
+	country: 'Mexico'
+};
+
+const {name, country, profession = 'No specified'} = person;
+```
+
+Please note destructure objects are very similar to destructure arrays, however the value positions doesn't matter. In the example above in the destruction we decided a different order in comparison with the object declaration. e.g country was declared as third value on the object, but in the deconstruction we moved to the second position.
+
+Now, using destructure objects inside an arrow function is also possible.
+
+```
+const person = {
+	name: 'John Doe', 
+	age: 33, 
+	country: 'Mexico'
+};
+
+const showInfo = ( {name, country, carrer = 'No specified'} ) => {
+    console.log(`${name} is from ${country}`);
+}
+
+showInfo(person);
+```
+
+The arrow function from the example above can be optimized. 
+
+```
+const showInfo = ( {name, country, carrer = 'No specified'} ) => console.log(`${name} is from ${country}`);
+```
