@@ -283,7 +283,7 @@ const [name, , country, email = 'No specified'] = person;
 console.log(country);
 ```
 
-In the example above we skip age (33) by leaving just a coma.
+In the example above we skip `age` (33) by leaving just a coma.
 
 Now, using destructure arrays inside an arrow function is also possible.
 
@@ -317,7 +317,7 @@ const person = {
 const {name, country, profession = 'No specified'} = person;
 ```
 
-Please note destructure objects are very similar to destructure arrays, however the value positions doesn't matter. In the example above in the destruction we decided a different order in comparison with the object declaration. e.g country was declared as third value on the object, but in the deconstruction we moved to the second position.
+Please note destructure objects are very similar to destructure arrays, however the value positions doesn't matter. In the example above in the destruction we decided a different order in comparison with the object declaration. e.g `country` was declared as third value on the object, but in the deconstruction we moved to the second position.
 
 Now, using destructure objects inside an arrow function is also possible.
 
