@@ -1,7 +1,5 @@
 # Learning ES6
 
-Based on [this course](https://www.youtube.com/playlist?list=PLhSj3UTs2_yX_ct0OfHrmMwKL8wpz-N2j) by Falcon Masters
-
 **Important! Before to continue, you'll need to have nodejs and npm installed.**
 
 ## 1. Initial file structure
